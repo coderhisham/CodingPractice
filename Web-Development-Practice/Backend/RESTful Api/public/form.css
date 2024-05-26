@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+form{
+    background-color: blanchedalmond;
+    width: 25vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+form *{
+    border-radius: 10px;
+    border: none;
+}
+form input{
+    height: 3em;
+    width: 80%;
+    margin-bottom: 10px;
+}
+form textarea{
+    height: 5em;
+    width: 80%;
+    margin-bottom: 10px;
+}
+header{
+    margin: 0;
+    padding:0;
+    background-color: rgb(139, 19, 19);
+    height: 8vh;
+}
+header h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2vh;
+}
+form h1{
+    color: maroon;
+    margin-bottom: 10px;
+
+}
+
+form button{
+    background-color: maroon;
+    color: white;
+    padding: 10px 15px;
+    width: 15em ;
+}

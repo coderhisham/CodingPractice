@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding:0;
+    background-color: rgb(139, 19, 19);
+    height: 8vh;
+}
+header h1{
+    display: inline-block;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2vh;
+}
+body{
+    text-align: center;
+}
+.post{
+    margin-top: 5px;
+    display: inline-block;
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 23.5vw;
+    height: 12vh;
+}
+
+@media screen and (max-width: 762px){
+    .post{
+        width: 90vw;
+    }
+    
+}
+.username{
+    text-align: start ;
+    font-style: italic;
+}
+.username span{
+    font-style: normal;
+    color: grey;
+}
+
+.content{
+    padding-top: 10%;
+    text-align: center;
+}

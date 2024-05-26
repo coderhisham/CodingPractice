@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+h1{
+    color: maroon;
+}
+.container{
+    margin: 0 10px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding:0;
+    background-color: rgb(139, 19, 19);
+    height: 8vh;
+}
+header h1{
+    display: inline-block;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2vh;
+}
+header button{
+    text-align: end;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+header button:hover{
+    background-color: white;
+
+}
+.post{
+    margin-top: 5px;
+    display: inline-block;
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 23.5vw;
+    height: 12vh;
+}
+
+@media screen and (max-width: 762px){
+    .post{
+        width: 90vw;
+    }
+    
+}
+.username{
+    font-style: italic;
+}
+.username span{
+    font-style: normal;
+    color: grey;
+}
+
+.content{
+    padding-top: 5%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+form{
+    display: inline-block;
+}
+.options{
+    margin-top: 20px;
+}
+.opt button{
+    margin-left: 5px;
+    background-color: maroon;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+.opt{
+    display: flex;
+    justify-content: end;
+}

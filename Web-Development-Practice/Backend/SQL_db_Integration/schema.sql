@@ -1,0 +1,3 @@
+SHOW DATABASES;
+USE test_app;
+SHOW TABLES;

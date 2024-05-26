@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+#label{
+    margin-top: 10rem;
+    display: block;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 10rem;
+}
+.container{
+    text-align: center;
+}
+.container *{
+    padding: 10px 15px;
+}

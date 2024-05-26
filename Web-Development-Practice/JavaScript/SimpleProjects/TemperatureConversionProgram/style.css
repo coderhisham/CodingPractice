@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 88%);
+}
+h1{
+    color: rgb(67, 67, 209);
+}
+form{
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px hsla(0, 5%, 15%, 0.3);
+}
+#inpVal{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: solid hsla(0, 0%, 43%, 0.493);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: rgba(130, 130, 235, 0.562);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(160, 160, 35, 0.349);
+}
+#result{
+    font-size: 2em;
+    font-weight: bold;
+}

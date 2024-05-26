@@ -1,0 +1,24 @@
+.chat{
+    background-color: aquamarine;
+    min-width: 20vw;
+    padding:15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.chat p{
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.message{
+    background-color: rgb(22, 128, 214);
+    border-radius: 16px;
+    padding: 5px 10px;
+}
