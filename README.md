@@ -1,2 +1,6 @@
-# LangPractice
-# LangPractice
+# Coding Practice
+
+* C Programming
+* Web Development
+* Rust
+* Go
