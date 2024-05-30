@@ -1,18 +1,22 @@
 fn main() {
 
-    //immutable
+    // Immutable
     let x = 5; //Immutable by default
-    //x = 6; Error
+
+    // x = 6; Error because the variable is immutable by default
     println!("The value of x is: {x}");
 
     //mutable
-    let mut y;
+    let mut y = 5;
+    println!("The old value of y is: {y}");
     y = 6;
-    println!("The value of y is: {y}");
+    println!("The new value of y is: {y}");
 
     //Constants: not just immutable by default they're always immutable
     const Z:u32 = 6;
-    //const mut z:32 = 6 => Error
+
+    //const mut z:32 = 6 => Error because constants can't be made mutable
+
     //z = 7; => Error
     println!("The value of Z is: {Z}");
 
@@ -30,4 +34,5 @@ fn main() {
         println!("The value of w is: {w}");
     }
     println!("The value of w is: {w}");
+    
 }
