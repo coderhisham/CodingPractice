@@ -1,0 +1,1 @@
+/mnt/DataDrive/Project\ Files/VScode/CodingPractice/Rust_Practice/rust-start-proj/target/debug/rust-start-proj: /mnt/DataDrive/Project\ Files/VScode/CodingPractice/Rust_Practice/rust-start-proj/src/main.rs
