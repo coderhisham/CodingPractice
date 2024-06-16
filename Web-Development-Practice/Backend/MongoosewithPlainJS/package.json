@@ -1,14 +1,14 @@
 {
-  "dependencies": {
-    "mongoose": "^8.2.2"
-  },
-  "name": "mongo",
+  "name": "mongoosewithplainjs",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "coderhisham",
+  "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "mongoose": "^8.4.1"
+  }
 }
