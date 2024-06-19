@@ -1,0 +1,18 @@
+section {
+  display: flex;
+}
+.chat {
+  background-color: aliceblue;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.msg {
+  background-color: aquamarine;
+  padding: 1px 10px;
+  border-radius: 20px;
+}
+span {
+  font-weight: bold;
+  color: blue;
+}
