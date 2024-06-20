@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/chats.css" />
   </head>
   <body>
-    <h1>All Chats!!!!</h1>
-    <a href="/chats/new"><button>New Chat</button></a>
+    <div class="Header">
+      <h1>All Chats!!!!</h1>
+      <a href="/chats/new"><button>New Chat</button></a>
+    </div>
     <section>
       <% for(let chat of chats){ %>
       <div class="chat">
@@ -18,7 +20,10 @@
         </div>
         <p>Recieved by:<span><%=chat.to%></span></p>
         <hr />
-        <p><span><%=chat.created_at%></span></p>
+        <p>
+          <span><%=chat.created_at.toString().split(" ")[4]%></span>,
+          <%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%>
+        </p>
       </div>
       <% } %>
     </section>
