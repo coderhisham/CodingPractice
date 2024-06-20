@@ -26,25 +26,25 @@ let chats = [
     from: "Hanan",
     to: "Hisham",
     message: "bla bla blaaaaaaaaaa..",
-    date: new Date(),
+    created_at: new Date(),
   },
   {
     from: "Hanan",
     to: "Haniya",
     message: "fsdfsdfsdfsdfsdf",
-    date: new Date(),
+    created_at: new Date(),
   },
   {
     from: "Haniya",
     to: "Hisham",
     message: "asdasdqweqweqwe",
-    date: new Date(),
+    created_at: new Date(),
   },
   {
     from: "Haniya",
     to: "Hisham",
     message: "saasdasddfsdfsdfbvfdgfdfgdfg",
-    date: new Date(),
+    created_at: new Date(),
   },
 ];
 
