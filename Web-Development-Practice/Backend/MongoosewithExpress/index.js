@@ -21,10 +21,7 @@ async function connectDB() {
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
-
-app.listen(port, () => {
-  console.log(`Listening at ${port}`);
-});
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.send("Root is working");
@@ -35,4 +32,30 @@ app.get("/chats", async (req, res) => {
   res.render("chats.ejs", { chats });
 });
 
-app.get("/chats/new", (req, res) => {});
+app.get("/chats/new", (req, res) => {
+  res.render("new.ejs");
+});
+
+app.post("/chats", (req, res) => {
+  let { from, to, message } = req.body;
+  let newChat = new Chat({
+    from: from,
+    to: to,
+    message: message,
+    created_at: new Date(),
+  });
+
+  newChat
+    .save()
+    .then((res) => {
+      console.log("Successfully Saved to DB");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  res.redirect("/chats");
+});
+
+app.listen(port, () => {
+  console.log(`Listening at ${port}`);
+});
