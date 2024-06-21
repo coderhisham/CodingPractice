@@ -9,10 +9,8 @@
   <body>
     <p>Chat Editor: <%=chat.id%></p>
     <p>This message was Sent by <b><%=chat.from%></b> to <b><%=chat.to%></b></p>
-    <form action="/chats/chat.id">
-      <textarea name="newMessage" rows="6" cols="50">
-<%=chat.message%></textarea
-      >
+    <form method="POST" action="/chats/<%=chat._id%>?_method=PUT">
+      <textarea name="message" rows="6" cols="50"><%=chat.message%></textarea>
       <button>Save</button>
     </form>
   </body>
