@@ -4,3 +4,4 @@
 * Web Development
 * Rust
 * Go
+* Scrypto
