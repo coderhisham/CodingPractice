@@ -4,3 +4,5 @@
 * Web Development
 * Rust
 * Go
+* Scrypto
+* Docker
