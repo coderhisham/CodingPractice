@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.buttons :nth-child(2) {
+  margin: 0px 10px;
+}
