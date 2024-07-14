@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import "./App.css";
 
 function App() {
-  const [length, setLength] = useState(8);
+  const [length, setLength] = useState(6);
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [specialCharAllowed, setSpecialCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
@@ -25,7 +25,7 @@ function App() {
     if (specialCharAllowed) str += specialChar;
 
     for (let i = 0; i < length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1);
+      let char = Math.floor(Math.random() * str.length);
       pass += str.charAt(char);
     }
 
