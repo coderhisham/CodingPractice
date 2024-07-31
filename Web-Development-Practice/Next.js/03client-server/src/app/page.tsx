@@ -1,5 +1,5 @@
 import ExampleClient from "@/components/ExampleClient";
-import ExampleServer from "@/components/ExampleServer";
+import ExampleServer2 from "@/components/ExampleServer2";
 
 export default function Home() {
   console.log("Where do I render?");
@@ -9,6 +9,7 @@ export default function Home() {
       <h2>Welcome</h2>
       <ExampleClient />{" "}
       {/*will be prerendered on the server but server components will be done first*/}
+      <ExampleServer2 />
     </main>
   );
 }
