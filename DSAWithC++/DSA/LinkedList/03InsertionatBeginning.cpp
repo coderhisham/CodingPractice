@@ -6,8 +6,8 @@ struct Node {
     Node* next;
 };
 
-void printValues(Node* head){
-    Node* temp = head;
+void printValues(Node** head){
+    Node* temp = *head;
     while(temp!=nullptr){
         cout<<temp->data<<" ";
         temp= temp->next;
@@ -15,11 +15,11 @@ void printValues(Node* head){
     cout<<endl;
 }
 
-void insertionAtBeginning(Node*& head, int newData){
+void insertionAtBeginning(Node** head, int newData){
     Node* newNode = new Node();
     newNode->data = newData;
-    newNode->next = head;
-    head = newNode;
+    newNode->next = *head;
+    *head = newNode;
 }
 
 
@@ -39,8 +39,8 @@ int main(){
     second->next = third;
     third->next = nullptr;
 
-    printValues(head);
-    insertionAtBeginning(head, 0);
-    printValues(head);
+    printValues(&head);
+    insertionAtBeginning(&head, 0);
+    printValues(&head);
     
 }
