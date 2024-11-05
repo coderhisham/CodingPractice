@@ -20,6 +20,15 @@ Node* DeletionAtBeginning(Node* head){
     return head;
 }
 
+void printValues(Node* head){
+    Node* temp = head;
+    while(temp!=nullptr){
+        cout<<temp->data<<" ";
+        temp= temp->next;
+    }
+    cout<<endl;
+}
+
 int main(){
     Node* head = new Node(10);
     Node* second = new Node(20);
@@ -30,5 +39,8 @@ int main(){
     second->next = third;
     third->next = fourth;
 
+
+    printValues(head);
     head = DeletionAtBeginning(head);
+    printValues(head);
 }
