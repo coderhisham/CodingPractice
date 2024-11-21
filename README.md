@@ -6,3 +6,4 @@
 * Go
 * Scrypto
 * Docker
+* Kotlin
