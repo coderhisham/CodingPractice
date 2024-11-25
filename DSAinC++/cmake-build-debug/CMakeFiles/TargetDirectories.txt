@@ -1,0 +1,3 @@
+/mnt/DataDrive/ProjectFiles/VSCode/CodingPractice/DSAinC++/cmake-build-debug/CMakeFiles/DSAinC__.dir
+/mnt/DataDrive/ProjectFiles/VSCode/CodingPractice/DSAinC++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/DataDrive/ProjectFiles/VSCode/CodingPractice/DSAinC++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
