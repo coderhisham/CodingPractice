@@ -77,7 +77,6 @@ int main()
     Q.Enqueue(20);
     Q.Enqueue(30);
     Q.Enqueue(40);
-    Q.Enqueue(50);
     Q.Dequeue();
     cout<<"The size of the Queue is "<<Q.size<<endl;
     cout<<"The Peek element of the Queue is "<<Q.Peek()<<endl;
