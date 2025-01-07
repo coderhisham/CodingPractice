@@ -38,7 +38,7 @@ export class UsersController {
 
   @Patch(':id') // PATCH /users/:id
   update(
-    @Param(':id') id: string,
+    @Param('id') id: string,
     @Body()
     updatedData: {
       name?: string;
