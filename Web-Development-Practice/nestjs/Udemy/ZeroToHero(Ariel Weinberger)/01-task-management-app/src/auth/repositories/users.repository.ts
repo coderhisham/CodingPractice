@@ -1,6 +1,11 @@
 import { DataSource, Repository } from 'typeorm';
 import { User } from '../entities/user.entity';
-import { Injectable } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  InternalServerErrorException,
+} from '@nestjs/common';
+import { AuthCredentialsDto } from '../dto/auth-credentials.dto';
 
 @Injectable()
 export class UserRepository extends Repository<User> {
@@ -8,5 +13,20 @@ export class UserRepository extends Repository<User> {
     super(User, dataSource.createEntityManager());
   }
 
-  //Custom Methods
+  async createUser(authCredentialsDto: AuthCredentialsDto): Promise<void> {
+    const { username, password } = authCredentialsDto;
+
+    const user = this.create({ username, password });
+
+    try {
+      await this.save(user);
+    } catch (error) {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      if (error.code === '23505') {
+        throw new ConflictException('Username Already Exists');
+      } else {
+        throw new InternalServerErrorException();
+      }
+    }
+  }
 }
